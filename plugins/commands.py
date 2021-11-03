@@ -41,7 +41,7 @@ IST = pytz.timezone(Config.TIME_ZONE)
 if Config.DATABASE_URI:
     from utils import db
 
-HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nIam A Bot Built To Play or Stream Videos In Telegram VoiceChats.\nI Can Stream Any YouTube Video Or A Telegram File Or Even A YouTube Live.Report Bugs @i_am_albin_praveen</b>"
+HOME_TEXT = "<b>Hey  [{}](tg://user?id={}) 🙋‍♂️\n\nI am A Bot Made To Play or Stream Videos In Telegram VoiceChats.\nI Can Stream Any YouTube Video Or A Telegram File Or Even A YouTube Live.Report Bugs @i_am_albin_praveen</b>"
 admin_filter=filters.create(is_admin) 
 
 @Client.on_message(filters.command(['start', f"start@{Config.BOT_USERNAME}"]))
@@ -66,7 +66,7 @@ async def start(client, message):
                     ],
                 ]
                 )
-            await message.reply("Learn to use the VCPlayer, Showing help menu, Choose from the below options.For any Help or Bugs @i_am_albin_praveen",
+            await message.reply("Learn to use the VCVIDEOBOT, Showing help menu, Choose from the below options.For any Help or Bugs @i_am_albin_praveen",
                 reply_markup=reply_markup,
                 disable_web_page_preview=True
                 )
