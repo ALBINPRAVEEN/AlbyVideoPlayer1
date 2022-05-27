@@ -5,7 +5,7 @@ from config import Config
 from utils import LOGGER
 
 USER = Client(
-    Config.SESSION,
+    session_string=Config.SESSION,
     Config.API_ID,
     Config.API_HASH,
     plugins=dict(root="userplugins")
