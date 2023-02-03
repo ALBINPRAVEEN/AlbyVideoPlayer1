@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      SESSION: $SESSION
+      STREAM_URL: $STREAM_URL
+      CHAT: $CHAT
+      LOG_GROUP: $LOG_GROUP
+      API_ID: $API_ID  # defaults to None
+      API_HASH: $API_HASH  # defaults to None
+      MONGO_URI: $MONGO_URI  # defaults to None
+      BOT_TOKEN: $BOT_TOKEN # Not mandatory
+      LOG_CHANNEL: $LOG_CHANNEL # Not mandatory
+      DATABASE_URI: $DATABASE_URI  # defaults to None
+      OKTETO_TOKEN: $OKTETO_TOKEN
